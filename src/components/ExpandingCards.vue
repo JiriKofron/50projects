@@ -14,6 +14,7 @@
 </template>
 
 <script>
+
 export default {
   name: 'ExpandingCards',
   data () {
@@ -74,7 +75,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
+@import "./src/style/base";
   h3 {
     font-family: 'Cinzel', serif;
     font-size: 2rem;
@@ -129,13 +130,13 @@ export default {
 
       figcaption {
         text-align: center;
-        color: whitesmoke;
+        color: $light-color;
         font-size: 2rem;
       }
 
       a {
         font-family: 'Josefin Slab', serif;
-        color: whitesmoke;
+        color: $light-color;
         text-decoration: none;
         font-size: 1.2rem;
 

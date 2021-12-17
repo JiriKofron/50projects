@@ -8,6 +8,7 @@
 
 <style lang="scss">
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;700&family=Josefin+Slab:ital,wght@0,300;0,400;0,700;1,300&display=swap');
+@import "style/base";
 
 body {
   margin: 0;
@@ -22,7 +23,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: $dark-blue;
   width: 100%;
   height: 100%;
   overflow-x: hidden;
@@ -37,10 +38,10 @@ body {
   a {
     font-family: 'Cinzel',serif;
     font-weight: bold;
-    color: #2c3e50;
+    color: $imperial-red;
 
     &.router-link-exact-active {
-      color: #42b983;
+      color: $dark-blue;
     }
   }
 }
