@@ -10,12 +10,14 @@
 <script>
 import TheExpandingCards from '@/components/ExpandingCards.vue'
 import TheProgressSteps from '@/components/ProgressSteps.vue'
+import TheRotatingNav from '@/components/RotatingNav'
 
 export default {
   name: 'GuidePost',
   components: [
     TheExpandingCards,
-    TheProgressSteps
+    TheProgressSteps,
+    TheRotatingNav
   ],
   data () {
     return {
@@ -29,6 +31,11 @@ export default {
           route: '/progress-steps',
           name: 'Progress Steps',
           id: 2
+        },
+        {
+          route: '/rotating-nav',
+          name: 'Rotating navigation',
+          id: 3
         }
       ]
     }

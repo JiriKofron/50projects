@@ -76,10 +76,6 @@ export default {
 
 <style lang="scss" scoped>
 @import "./src/style/base";
-  h3 {
-    font-family: 'Cinzel', serif;
-    font-size: 2rem;
-  }
   .container {
     display: flex;
     align-items: center;
