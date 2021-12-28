@@ -11,10 +11,30 @@ const routes = [
         path: 'expanding-cards',
         name: 'Expanding Cards',
         // route level code-splitting
-        // this generates a separate chunk (about.[hash].js) for this route
+        // this generates a separate chunk (name.[hash].js) for this route
         // which is lazy-loaded when the route is visited.
         component: function () {
-          return import(/* webpackChunkName: "about" */ '../components/ExpandingCards.vue')
+          return import(/* webpackChunkName: "Expanding cards" */ '../components/ExpandingCards')
+        }
+      },
+      {
+        path: 'progress-steps',
+        name: 'Progress steps',
+        // route level code-splitting
+        // this generates a separate chunk (name.[hash].js) for this route
+        // which is lazy-loaded when the route is visited.
+        component: function () {
+          return import(/* webpackChunkName: "Progress Steps" */ '../components/ProgressSteps')
+        }
+      },
+      {
+        path: 'rotating-nav',
+        name: 'Rotating navigation',
+        // route level code-splitting
+        // this generates a separate chunk (name.[hash].js) for this route
+        // which is lazy-loaded when the route is visited.
+        component: function () {
+          return import(/* webpackChunkName: "Progress Steps" */ '../components/RotatingNav')
         }
       }
     ]

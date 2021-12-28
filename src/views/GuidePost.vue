@@ -1,7 +1,7 @@
 <template>
   <aside>
     <h2>Guidepost</h2>
-     <nav>
+     <nav class="nav">
         <router-link v-for="project in projectList" v-bind:key="project.id" :to="project.route">{{project.name}} </router-link>
      </nav>
   </aside>
@@ -9,10 +9,16 @@
 
 <script>
 import TheExpandingCards from '@/components/ExpandingCards.vue'
+import TheProgressSteps from '@/components/ProgressSteps.vue'
+import TheRotatingNav from '@/components/RotatingNav'
 
 export default {
   name: 'GuidePost',
-  components: [TheExpandingCards],
+  components: [
+    TheExpandingCards,
+    TheProgressSteps,
+    TheRotatingNav
+  ],
   data () {
     return {
       projectList: [
@@ -20,6 +26,16 @@ export default {
           route: '/expanding-cards',
           name: 'Expanding Cards',
           id: 1
+        },
+        {
+          route: '/progress-steps',
+          name: 'Progress Steps',
+          id: 2
+        },
+        {
+          route: '/rotating-nav',
+          name: 'Rotating navigation',
+          id: 3
         }
       ]
     }
@@ -27,11 +43,21 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+@import "./src/style/base";
+
 aside {
-  background-color: #F2CD5C;
+  background-color: $imperial-red;
 }
-  h2 {
+
+h2 {
     font-family: 'Cinzel', serif;
+    color: $light-color;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
   }
 </style>

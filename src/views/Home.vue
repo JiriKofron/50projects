@@ -20,6 +20,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "./src/style/base";
+
 .home {
   display: flex;
   width: 100%;
@@ -38,7 +40,7 @@ export default {
     height: 100%;
     margin: 0;
     padding: 0;
-    background-color: #D9C7B8;
+    background-color: $base-color;
     overflow: hidden;
   }
 }
