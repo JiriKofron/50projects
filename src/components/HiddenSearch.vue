@@ -2,7 +2,7 @@
 <section class="search">
   <h3>Hidden Search</h3>
   <article class="search__field">
-    <input class="search__field__input" :class="{active: isActive}"/>
+    <input class="search__field__input" :class="{active: isActive}" placeholder="Search..."/>
     <font-awesome-icon @click="isActive = !isActive" class="search__field__icon" :icon="['fas', 'search']" size="2x" />
   </article>
 </section>

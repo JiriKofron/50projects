@@ -33,6 +33,11 @@ export default {
           route: 'hidden-search',
           name: 'Hidden search',
           id: 4
+        },
+        {
+          route: 'blury-loading',
+          name: 'Blury loading',
+          id: 5
         }
       ]
     }
