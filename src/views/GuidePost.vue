@@ -8,17 +8,9 @@
 </template>
 
 <script>
-import TheExpandingCards from '@/components/ExpandingCards.vue'
-import TheProgressSteps from '@/components/ProgressSteps.vue'
-import TheRotatingNav from '@/components/RotatingNav'
 
 export default {
   name: 'GuidePost',
-  components: [
-    TheExpandingCards,
-    TheProgressSteps,
-    TheRotatingNav
-  ],
   data () {
     return {
       projectList: [
@@ -36,6 +28,11 @@ export default {
           route: '/rotating-nav',
           name: 'Rotating navigation',
           id: 3
+        },
+        {
+          route: 'hidden-search',
+          name: 'Hidden search',
+          id: 4
         }
       ]
     }
