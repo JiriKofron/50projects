@@ -38,6 +38,16 @@ export default {
           route: 'blury-loading',
           name: 'Blury loading',
           id: 5
+        },
+        {
+          route: 'scroll-animation',
+          name: 'Scroll animation',
+          id: 6
+        },
+        {
+          route: 'split-landingpage',
+          name: 'Split landing page',
+          id: 7
         }
       ]
     }
