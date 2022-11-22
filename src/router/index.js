@@ -34,7 +34,7 @@ const routes = [
         // this generates a separate chunk (name.[hash].js) for this route
         // which is lazy-loaded when the route is visited.
         component: function () {
-          return import(/* webpackChunkName: "Progress Steps" */ '../components/RotatingNav')
+          return import(/* webpackChunkName: "Rotating navigation" */ '../components/RotatingNav')
         }
       },
       {
@@ -44,7 +44,7 @@ const routes = [
         // this generates a separate chunk (name.[hash].js) for this route
         // which is lazy-loaded when the route is visited.
         component: function () {
-          return import(/* webpackChunkName: "Progress Steps" */ '../components/HiddenSearch')
+          return import(/* webpackChunkName: "Hidden search" */ '../components/HiddenSearch')
         }
       },
       {
@@ -54,7 +54,27 @@ const routes = [
         // this generates a separate chunk (name.[hash].js) for this route
         // which is lazy-loaded when the route is visited.
         component: function () {
-          return import(/* webpackChunkName: "Progress Steps" */ '../components/BluryLoading')
+          return import(/* webpackChunkName: "Blury loading" */ '../components/BluryLoading')
+        }
+      },
+      {
+        path: 'scroll-animation',
+        name: 'Scroll animation',
+        // route level code-splitting
+        // this generates a separate chunk (name.[hash].js) for this route
+        // which is lazy-loaded when the route is visited.
+        component: function () {
+          return import(/* webpackChunkName: "Scroll Animation" */ '../components/ScrollAnimation')
+        }
+      },
+      {
+        path: 'split-landingpage',
+        name: 'Split landing page',
+        // route level code-splitting
+        // this generates a separate chunk (name.[hash].js) for this route
+        // which is lazy-loaded when the route is visited.
+        component: function () {
+          return import(/* webpackChunkName: "Split landing page" */ '../components/SplitLandingPage')
         }
       }
     ]
